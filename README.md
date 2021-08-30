@@ -35,7 +35,7 @@ The project needs some additional NPM dependencies in order to work.
 
 ### Required Scripts
 
-Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file.
+Add `"start"`. `"server"`, `"migrate"` and `"rollback"` scripts to the `package.json` file
 
 ### Required Tables
 
@@ -86,7 +86,7 @@ Build an API inside the `api` folder with endpoints for:
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
 
-- [ ] `[GET] /api/tasks`
+- [ ] `[GET] /api/tasks`x
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Each task must include `project_name` and `project_description`
   - Example of response body: `[{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_name:"bar","project_description":null}]`
@@ -111,7 +111,14 @@ Build an API inside the `api` folder with endpoints for:
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
+
 1. Explain the difference between Relational Databases and SQL.
+relational databases  can be handles by database software whiche manages storage, querying, upadating etc of the RB. SQL is the language you use to interact with the database 
+
 2. Why do tables need a Primary Key?
+tables need primary keys to be able to have row level accessiblity, it lets you specifically pick out a value
+
 3. What is the name given to a table column that references the Primary Key on another table?
+Foreign key 
 4. What do we need in order to have a _many to many_ relationship between two tables?
+need multipl table with multiple foreign keys
